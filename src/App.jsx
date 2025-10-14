@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/hospital-frontend">  {/* Add basename here */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Login />} />
